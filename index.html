@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#08111b">
+  <meta name="description" content="SHADOW WARRIOR — GamerKie Edition. Fight your way. Become a legend.">
+  <title>SHADOW WARRIOR — GamerKie Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <header class="site-bar">
+      <div class="brand"><span class="brand-mark">G</span><span>GAMER<span>KIE</span></span></div>
+      <div class="site-title">SHADOW WARRIOR <small>FIGHT YOUR WAY. BECOME A LEGEND.</small></div>
+      <button id="fullscreenBtn" class="icon-btn" aria-label="Toggle fullscreen" title="Fullscreen">⛶</button>
+    </header>
+    <section id="game-shell" aria-label="Shadow Warrior game">
+      <div id="game-stage">
+        <canvas id="game" width="960" height="540" aria-label="Shadow Warrior game canvas" tabindex="0"></canvas>
+        <div id="touch-controls" aria-label="Touch game controls">
+          <div class="move-pad">
+            <button data-control="left" aria-label="Move left">◀</button>
+            <button data-control="right" aria-label="Move right">▶</button>
+          </div>
+          <div class="action-pad">
+            <button data-control="block" class="control-block" aria-label="Block">BLOCK</button>
+            <button data-control="dodge" class="control-dodge" aria-label="Dodge">DODGE</button>
+            <button data-control="jump" class="control-jump" aria-label="Jump">JUMP</button>
+            <button data-control="attack" aria-label="Punch">HIT</button>
+            <button data-control="heavy" class="control-heavy" aria-label="Heavy attack">HEAVY</button>
+            <button data-control="special" class="control-special" aria-label="Special attack">⚡</button>
+          </div>
+        </div>
+        <div id="rotate-notice"><div>↻</div><strong>ROTATE YOUR DEVICE</strong><span>Shadow Warrior plays best in landscape mode.</span></div>
+      </div>
+    </section>
+    <footer class="site-footer"><span>GAMERKIE — PLAY. FIGHT. CONQUER.</span><span>Original game • Progress saved on this device</span></footer>
+  </main>
+  <script type="module" src="game.js"></script>
+</body>
+</html>

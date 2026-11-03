@@ -1,0 +1,11 @@
+{
+  "name": "shadow-warrior-gamerkie",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Original canvas-based 2D action platformer for GitHub Pages and Blogger.",
+  "scripts": {
+    "test": "node --test && node tests/runtime-smoke.mjs",
+    "check": "node --check game.js && node --check player.js && node --check enemies.js && node --check combat.js && node --check levels.js && node --check bosses.js && node --check weapons.js && node --check ui.js && node --check audio.js && node --check save.js"
+  }
+}
